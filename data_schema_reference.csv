@@ -1,0 +1,11 @@
+column,source,desc
+name,google|yelp,Business name
+rating,google|yelp,Average star rating
+user_ratings_total / review_count,google|yelp,Number of ratings/reviews
+lat,both,Latitude
+lng,both,Longitude
+address,both,Display address
+place_id,google,Google Places unique id
+yelp_id,yelp,Yelp business id
+price,yelp,"Price tier like $, $$"
+categories,yelp,Comma-separated categories
