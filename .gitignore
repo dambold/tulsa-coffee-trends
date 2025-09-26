@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit and temp
+.streamlit/
+data/outputs/*.png
+
+# OS junk
+.DS_Store
+Thumbs.db
