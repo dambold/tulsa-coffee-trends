@@ -1,6 +1,40 @@
+# ☕ Tulsa Coffee Trends — AI-Powered Dashboard
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.37+-FF4B4B.svg)](https://streamlit.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+A lightweight AI + data project that pulls **real-time Tulsa coffee shop data** from Google Places (and optionally Yelp), cleans and ranks them, and displays an **interactive dashboard** with maps, bar charts, and keyword insights from review text.
+
+---
+
+## 🚀 Features
+
+- ✅ **Google Places Integration** – Fetches shop names, ratings, locations & review counts  
+- ✅ **Optional Yelp Reviews** – Adds NLP sentiment analysis (VADER) and word cloud  
+- ✅ **Ranking Engine** – Combines rating, review volume, and sentiment into a single score  
+- ✅ **Interactive Dashboard** – Streamlit app with maps, top shop charts, and data table  
+---
+
+## 📸 Screenshots
+
+| Map View | Top Shops Chart |
+|---------|----------------|
+| ![Map Screenshot](data/outputs/top_stars.png) | ![Bar Chart Screenshot](data/outputs/top_volume.png) |
+
+---
+
+## 🛠 Setup & Installation
+
+### 1. Clone This Repo
+```bash
+git clone https://github.com/your-username/tulsa_coffee_ai.git
+cd tulsa_coffee_ai
+
+
 # Tulsa Coffee AI — Step 1: Data Collection
 
-This starter collects coffee shop data for Tulsa from **Google Places** and **Yelp Fusion** APIs.
+This starter collects coffee shop data for Tulsa from **Google Places** API.
 - Outputs clean CSVs in `data/raw/`
 - Handles pagination, basic rate limiting, and deduping
 - Stores secrets via `.env`
@@ -18,16 +52,10 @@ This starter collects coffee shop data for Tulsa from **Google Places** and **Ye
 
 ## Outputs
 - `data/raw/google_places_coffee.csv`
-- `data/raw/yelp_coffee.csv`
 - `data/interim/merged_coffee_brands.csv` (name/location dedupe for later NLP)
 
 ## Notes
-- Google Places returns **name, rating, user_ratings_total, geometry, place_id**.
-- Yelp returns **name, rating, review_count, price, categories, coordinates, yelp_id**, plus **up to 3 latest reviews** per business (optional extra call).
-- Reviews from Google are restricted; for this quick win we use Yelp reviews text.
-
-
-
+- Google Places returns **name, rating, user_ratings_total, geometry, place_id**
 ---
 
 ## Step 2 – Analysis & Sentiment
