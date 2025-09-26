@@ -99,7 +99,7 @@ This repo includes .env.example as a safe template for others to replicate.
 
 ## 📄 License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License, free to use, modify, and share.
 
 ## ✨ Author
 
