@@ -16,14 +16,6 @@ A lightweight AI + data project that pulls **real-time Tulsa coffee shop data** 
 - ✅ **Interactive Dashboard** – Streamlit app with maps, top shop charts, and data table  
 ---
 
-## 📸 Screenshots
-
-| Map View | Top Shops Chart |
-|---------|----------------|
-| ![Map Screenshot](data/outputs/top_stars.png) | ![Bar Chart Screenshot](data/outputs/top_volume.png) |
-
----
-
 ## 🛠 Setup & Installation
 
 ### 1. Clone This Repo
@@ -83,4 +75,32 @@ This starter collects coffee shop data for Tulsa from **Google Places** API.
    streamlit run app/streamlit_app.py
    ```
 3. Open the local URL shown in your terminal to interact.
+---
 
+## 📊 Tech Stack
+
+Python 3.10+
+
+Pandas – Data cleaning & aggregation
+
+NLTK (VADER) – Sentiment analysis
+
+Matplotlib + WordCloud – Visualization
+
+Streamlit – Interactive web app
+
+## 🔒 Security Notes
+
+Never commit your real .env file.
+
+Always regenerate your API keys if accidentally pushed to a public repo.
+
+This repo includes .env.example as a safe template for others to replicate.
+
+## 📄 License
+
+This project is licensed under the MIT License
+
+## ✨ Author
+
+Built by Michael Dambold, data analyst, AI builder, and coffee enthusiast ☕.
